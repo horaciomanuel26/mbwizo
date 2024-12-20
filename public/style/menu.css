@@ -1,0 +1,55 @@
+/* Barra lateral esquerda */
+.esquerda {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid white;
+}
+
+.esquerda .logo {
+    background-color: aliceblue;
+}
+
+.esquerda .logo a {
+    color: black;
+    display: block;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.esquerda .links a {
+    display: block;
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+.esquerda .links a:hover {
+    background-color: #333;
+}
+.botao{
+    color: white;
+    display: none;
+    position: fixed;
+    z-index:99;
+    right: 0;
+    font-size: 40px;
+    background-color: #333;
+}
+/* Conteúdo principal */
+@media screen and (max-width: 700px) {
+    .esquerda {
+        display:none;
+        background-color: black;
+        z-index: 98;
+    }
+    .botao{
+        display: flex;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 799px) {
+    .esquerda {
+        width: 200px;
+    }
+}
